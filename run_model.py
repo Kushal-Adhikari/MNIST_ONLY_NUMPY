@@ -10,4 +10,4 @@ X_test = test_data[1:] / 255.0   # shape (784, m)
 preds = predict(X_test)
 
 accuracy = np.mean(preds == Y_test)
-print("Accuracy:", accuracy)
+print("Accuracy:", accuracy * 100, "%")
